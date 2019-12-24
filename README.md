@@ -1,34 +1,62 @@
 JSyn
 ====
 
-JSyn is a modular audio synthesizer for Java by Phil Burk.
+**JSyn** is a modular audio synthesizer for Java by *Phil Burk*.
 
-You can use JSyn to create unit generators, such as oscillators, filters,
-and envelopes. Units can be connected together and controlled
-in real-time from a Java program.
+You can use JSyn to create unit generators, such as oscillators, filters, and envelopes. Units can be connected together and controlled in real-time from a Java program.
 
-More information about JSyn, including documentation, is at:
+| Description                | Link                                                  |
+| -------------------------- | ----------------------------------------------------- |
+| Documentation              | http://www.softsynth.com/jsyn/                        |
+| Pre-compiled JSyn JAR file | http://www.softsynth.com/jsyn/developers/download.php |
+| Original JSyn source code  | https://github.com/philburk/jsyn                      |
 
-http://www.softsynth.com/jsyn/
+## How to use the library
 
-Pre-compiled JSyn JAR files are at:
+Add the following `repository` tag to your `pom.xml`:
 
-http://www.softsynth.com/jsyn/developers/download.php
+```xml
+<repository>
+	<id>jsyn-repo</id>
+	<url>https://github.com/fvarrui/jsyn/raw/master/repository</url>
+</repository>
+```
 
-The JSyn source code is available at:
+And the following `dependency`:
 
-https://github.com/philburk/jsyn
+```xml
+<dependency>
+	<groupId>com.jsyn</groupId>
+	<artifactId>JSyn</artifactId>
+	<version>16.8.0</version>
+</dependency>
+```
 
-To build JSyn, use ant. Just enter:
+## How to build and install the plugin
 
-    cd jsyn
-    ant
+Execute next commands in BASH (GNU/Linux or macOS) or CMD (Windows):
 
-The resulting jar will be placed in "/dist/lib/".
-To run the built-in test App on a desktop, enter something like this:
+1. Download source code and change to the project directory:
 
-    java -jar dist/lib/jsyn-20160203.jar
+```bash
+git clone https://github.com/fvarrui/jsyn.git
+cd jsyn
+```
 
-but with the correct date.
+2. Compile, package and install the plugin in your local repository and in the project's `repository` folder:
+
+```bash
+mvn install
+```
+
+## How to run built-in test app
+
+Run next command:
+
+```bash
+java -jar target/JSyn-16.8.0.jar
+```
+
+---
 
 JSyn - Copyright 1997-2014 Mobileer Inc
