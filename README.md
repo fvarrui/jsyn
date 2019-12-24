@@ -5,11 +5,11 @@ JSyn
 
 You can use JSyn to create unit generators, such as oscillators, filters, and envelopes. Units can be connected together and controlled in real-time from a Java program.
 
-| Description                | Link                                                  |
-| -------------------------- | ----------------------------------------------------- |
-| Documentation              | http://www.softsynth.com/jsyn/                        |
-| Pre-compiled JSyn JAR file | http://www.softsynth.com/jsyn/developers/download.php |
-| Original JSyn source code  | https://github.com/philburk/jsyn                      |
+| Description                | Link                                                         |
+| -------------------------- | ------------------------------------------------------------ |
+| Documentation              | http://www.softsynth.com/jsyn/                               |
+| Pre-compiled JSyn JAR file | https://github.com/fvarrui/jsyn/releases/download/v16.8.0/JSyn-16.8.0.jar |
+| Original JSyn source code  | https://github.com/philburk/jsyn                             |
 
 ## How to use the library
 
